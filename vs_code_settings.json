@@ -27,7 +27,6 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     // Python
-    "python.defaultInterpreterPath": "~\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
     "python.analysis.completeFunctionParens": true,
     "python.analysis.autoImportCompletions": false,
     "python.analysis.typeCheckingMode": "basic",
@@ -52,20 +51,7 @@
     // Unsorted
     "autoDocstring.startOnNewLine": false,
     "hediet.vscode-drawio.resizeImages": null,
-    "arduino.useArduinoCli": true,
-    "mssql.connections": [
-        {
-            "server": "localhost",
-            "database": "",
-            "authenticationType": "Integrated",
-            "encrypt": "Mandatory",
-            "trustServerCertificate": true,
-            "user": "",
-            "password": "",
-            "connectTimeout": 15,
-            "commandTimeout": 30,
-            "applicationName": "vscode-mssql"
-        }
-    ],
     "editor.defaultFormatter": "ms-python.black-formatter",
+    "security.workspace.trust.untrustedFiles": "open",
+    "python.createEnvironment.trigger": "off",
 }
