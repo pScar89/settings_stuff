@@ -36,7 +36,7 @@ sudo sysctl -p
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 
 # Create the update script
-cat << 'EOF' | sudo tee /usr/local/bin/update-system.sh
+cat <<'EOF' | sudo tee /usr/local/bin/update-system.sh
 #!/bin/bash
 
 # Define log file
@@ -71,6 +71,17 @@ EOF
 sudo chmod +x /usr/local/bin/update-system.sh
 
 # Set up a cron job to run the update script daily at 2 AM
-(crontab -l 2>/dev/null; echo "0 2 * * * /usr/local/bin/update-system.sh") | crontab -
+(
+    crontab -l 2>/dev/null
+    echo "0 2 * * * /usr/local/bin/update-system.sh"
+) | crontab -
 
 echo "Hardening, configuration, and update setup complete!"
+
+# Ask the user if they want to run the update
+read -p "Do you want to run the update now? (y/n): " choice
+if [[ "$choice" == [Yy]* ]]; then
+    sudo /usr/local/bin/update-system.sh
+else
+    echo "Update will not be run now. You can run it later with: sudo /usr/local/bin/update-system.sh"
+fi
