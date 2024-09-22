@@ -17,7 +17,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Terminal
   "terminal.integrated.fontSize": 18,
@@ -40,6 +39,7 @@
   "pylint.lintOnChange": true,
 
   // Formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
