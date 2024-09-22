@@ -1,74 +1,66 @@
 {
-    // Window
-    "window.newWindowDimensions": "maximized",
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "workbench.iconTheme": "vscode-great-icons",
+  // Window
+  "window.newWindowDimensions": "maximized",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "vscode-great-icons",
 
-    // Editor
-    "editor.fontSize": 22,
-    "editor.inlineSuggest.enabled": true,
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.fontFamily": "Consolas, Anonymous Pro, Terminus TTF, Fira Code, Source Code Pro",
-    "editor.fontLigatures": true,
-    "editor.mouseWheelZoom": true,
-    "editor.guides.indentation": false,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.stickyScroll.enabled": true,
-    "editor.defaultFormatter": "ms-python.black-formatter",
+  // Editor
+  "editor.fontSize": 20,
+  "editor.inlineSuggest.enabled": true,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.fontFamily": "Anonymous Pro, Consolas, Terminus TTF, Fira Code, Source Code Pro",
+  "editor.fontLigatures": true,
+  "editor.mouseWheelZoom": true,
+  "editor.guides.indentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-    // Terminal
-    "terminal.integrated.fontSize": 18,
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.copyOnSelection": false,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
+  // Terminal
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.copyOnSelection": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
 
-    // Explorer
-    "explorer.sortOrder": "filesFirst",
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
+  // Explorer
+  "explorer.sortOrder": "filesFirst",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
 
-    // Python
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.autoImportCompletions": false,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.createEnvironment.trigger": "off",
+  // Python
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.createEnvironment.trigger": "off",
 
-    // Linting
-    "flake8.args": [
-        "--max-line-length=120",
-        "--ignore=E402,F841,F401"
-    ],
+  // Linting
+  "pylint.lintOnChange": true,
 
-    // Formatting
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
-    },
+  // Formatting
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+  },
 
-    // Files
-    "files.autoSave": "afterDelay",
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/.classpath": true,
-        "**/.factorypath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        ".pytest_cache": true
-    },
+  // Files
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    ".pytest_cache": true
+  },
 
-    // Miscellaneous
-    "autoDocstring.startOnNewLine": false,
-    "security.workspace.trust.untrustedFiles": "open",
+  // Miscellaneous
+  "autoDocstring.startOnNewLine": false,
+  "security.workspace.trust.untrustedFiles": "open"
 
-    // Extensions
-        //none
-
-    //Uncategorized
-    
+  //Uncategorized
 }
