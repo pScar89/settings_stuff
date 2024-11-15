@@ -28,28 +28,27 @@
   "explorer.sortOrder": "filesFirst",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "python.defaultInterpreterPath": "python",
   "python.analysis.completeFunctionParens": true,
   "python.analysis.autoImportCompletions": false,
   "python.analysis.typeCheckingMode": "basic",
-  "python.createEnvironment.trigger": "off",
-  "pylint.lintOnChange": true,
   "pylint.args": [
     "--disable=C0114, C0115, C0116, W0621",
     "--max-line-length=120"
   ],
 
   // Formatting
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  
   "[html]": {
     "editor.defaultFormatter": "mohd-akram.vscode-html-format"
   },
-  "files.dialog.defaultPath": "D:\\MyCode",
   "files.autoSave": "afterDelay",
   "files.exclude": {
     "**/__pycache__": true,
